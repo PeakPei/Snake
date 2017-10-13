@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B79669D21DBD100E0011101A /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = B79669D01DBD100E0011101A /* food.png */; };
+		B79669D31DBD100E0011101A /* node.png in Resources */ = {isa = PBXBuildFile; fileRef = B79669D11DBD100E0011101A /* node.png */; };
 		B7B465AA1DA12979001A9DEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B465A91DA12979001A9DEC /* AppDelegate.m */; };
 		B7B465AD1DA12979001A9DEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B465AC1DA12979001A9DEC /* main.m */; };
 		B7B465B01DA12979001A9DEC /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B465AF1DA12979001A9DEC /* GameScene.m */; };
@@ -15,6 +17,7 @@
 		B7B465B71DA12979001A9DEC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B465B51DA12979001A9DEC /* MainMenu.xib */; };
 		B7B465C21DA12979001A9DEC /* SnakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B465C11DA12979001A9DEC /* SnakeTests.m */; };
 		B7B465CD1DA1297A001A9DEC /* SnakeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B465CC1DA1297A001A9DEC /* SnakeUITests.m */; };
+		B7B595F11DA15E2900C13C9F /* failView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B595F01DA15E2900C13C9F /* failView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B79669D01DBD100E0011101A /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
+		B79669D11DBD100E0011101A /* node.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = node.png; sourceTree = "<group>"; };
 		B7B465A51DA12979001A9DEC /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B465A81DA12979001A9DEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B7B465A91DA12979001A9DEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +56,8 @@
 		B7B465C81DA1297A001A9DEC /* SnakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B465CC1DA1297A001A9DEC /* SnakeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeUITests.m; sourceTree = "<group>"; };
 		B7B465CE1DA1297A001A9DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7B595EF1DA15E2900C13C9F /* failView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = failView.h; sourceTree = "<group>"; };
+		B7B595F01DA15E2900C13C9F /* failView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = failView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +112,10 @@
 				B7B465A91DA12979001A9DEC /* AppDelegate.m */,
 				B7B465AE1DA12979001A9DEC /* GameScene.h */,
 				B7B465AF1DA12979001A9DEC /* GameScene.m */,
+				B7B595EF1DA15E2900C13C9F /* failView.h */,
+				B7B595F01DA15E2900C13C9F /* failView.m */,
+				B79669D01DBD100E0011101A /* food.png */,
+				B79669D11DBD100E0011101A /* node.png */,
 				B7B465B11DA12979001A9DEC /* GameScene.sks */,
 				B7B465B31DA12979001A9DEC /* Assets.xcassets */,
 				B7B465B51DA12979001A9DEC /* MainMenu.xib */,
@@ -244,8 +255,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7B465B41DA12979001A9DEC /* Assets.xcassets in Resources */,
+				B79669D31DBD100E0011101A /* node.png in Resources */,
 				B7B465B21DA12979001A9DEC /* GameScene.sks in Resources */,
 				B7B465B71DA12979001A9DEC /* MainMenu.xib in Resources */,
+				B79669D21DBD100E0011101A /* food.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7B595F11DA15E2900C13C9F /* failView.m in Sources */,
 				B7B465AD1DA12979001A9DEC /* main.m in Sources */,
 				B7B465B01DA12979001A9DEC /* GameScene.m in Sources */,
 				B7B465AA1DA12979001A9DEC /* AppDelegate.m in Sources */,
@@ -495,6 +509,7 @@
 				B7B465D31DA1297A001A9DEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7B465D41DA1297A001A9DEC /* Build configuration list for PBXNativeTarget "SnakeTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +518,7 @@
 				B7B465D61DA1297A001A9DEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7B465D71DA1297A001A9DEC /* Build configuration list for PBXNativeTarget "SnakeUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +527,7 @@
 				B7B465D91DA1297A001A9DEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

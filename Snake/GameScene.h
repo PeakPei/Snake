@@ -8,6 +8,13 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface GameScene : SKScene
+@interface GameScene : SKScene<SKPhysicsContactDelegate>{
+    NSTimeInterval lastTime;
+    NSMutableArray* snake;
+    CGVector velocity;
+    int score;
+    SKLabelNode* scoreLabel;
+}
+-(void)makeFood;
 
 @end
